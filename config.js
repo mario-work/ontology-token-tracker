@@ -1,0 +1,1 @@
+const CorsProxyServerAddress = 'http://109.107.187.23:8080'

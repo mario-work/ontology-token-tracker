@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Ontology token tracker",
+  "description": "Ontology token tracker (ORC-20 & ORC-721)",
+  "version": "1.0.0",
+  "icons": { "128": "resources/images/icon_app.png" },
+  "browser_action": {
+    "default_icon": "resources/images/icon_app.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["popup.js"]
+    }
+  ],
+  "permissions": ["activeTab", "storage"]
+}
